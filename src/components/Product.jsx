@@ -4,7 +4,6 @@ import Rating from "./Rating";
 const Product = ({
   product: { _id, name, image, price, rating, numReviews },
 }) => {
-  console.log("image", image);
   return (
     <div className="card">
       <a href={`/product/${_id}`}>
