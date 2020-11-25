@@ -10,6 +10,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 #root {
@@ -34,7 +35,6 @@ header {
 main {
   grid-area: main;
   padding: 1rem;
-  height: calc(100vh - 120px);
 }
 
 footer {
