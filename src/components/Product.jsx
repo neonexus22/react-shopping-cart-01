@@ -1,6 +1,6 @@
 import React from "react";
-import Rating from "./Rating";
 import { Link } from "react-router-dom";
+import Rating from "./Rating";
 
 const Product = ({
   product: { _id, name, image, price, rating, numReviews },
