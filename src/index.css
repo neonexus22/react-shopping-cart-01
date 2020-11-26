@@ -146,6 +146,10 @@ a.brand {
   flex: 2 1 50rem;
 }
 
+.min-30 {
+  min-width: 30rem;
+}
+
 .row.center {
   justify-content: center;
 }
@@ -161,6 +165,11 @@ img.medium {
 }
 
 img.large {
+  width: 100%;
+}
+
+img.small {
+  max-width: 5rem;
   width: 100%;
 }
 
