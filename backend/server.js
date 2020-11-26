@@ -1,9 +1,15 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotevn from "dotenv";
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
 
+dotevn.config();
+
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const port = process.env.PORT || 5001;
 mongoose.connect(
   process.env.MONGODB_URL ||
