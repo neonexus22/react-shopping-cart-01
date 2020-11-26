@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
 
 import Product from "../components/Product";
 import LoadingBox from "../components/LoadingBox";
@@ -14,7 +13,7 @@ const HomeScreen = () => {
 
   useEffect(() => {
     dispatch(listProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>

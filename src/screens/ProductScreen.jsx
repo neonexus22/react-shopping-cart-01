@@ -10,7 +10,7 @@ import { detailsProduct } from "../redux/actions/productActions";
 
 const ProductScreen = (props) => {
   const dispatch = useDispatch();
-  const productId = +props.match.params.id;
+  const productId = props.match.params.id;
   const [qty, setQty] = useState(1);
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, product, error } = productDetails;
