@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotevn from "dotenv";
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
+import orderRouter from "./routers/orderRouter.js";
 
 dotevn.config();
 
@@ -24,6 +25,7 @@ mongoose.connect(
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
+app.use("/api/orders", orderRouter);
 
 app.get("/", (req, res) => {
   res.status(200).send("Server is Ready now");
