@@ -139,6 +139,16 @@ a.brand {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex label {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
 .row.top {
   align-items: flex-start;
 }
