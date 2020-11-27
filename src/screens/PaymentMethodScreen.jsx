@@ -53,7 +53,7 @@ const PaymentMethodScreen = (props) => {
         </div>
 
         <div>
-          <button className="primary" type="submit">
+          <button onClick={submitHandler} className="primary" type="submit">
             Continue
           </button>
         </div>
