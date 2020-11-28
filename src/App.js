@@ -11,6 +11,7 @@ import SignInScreen from "./screens/SigninScreen";
 import ShippingAddressScreen from "./screens/ShippingAddress";
 import PaymentMethodScreen from "./screens/PaymentMethodScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import OrderScreen from "./screens/OrderScreen";
 
 function App() {
   const dispatch = useDispatch();
@@ -59,6 +60,7 @@ function App() {
           <Route path="/shipping" component={ShippingAddressScreen} />
           <Route path="/payment" component={PaymentMethodScreen} />
           <Route path="/placeorder" component={PlaceOrderScreen} />
+          <Route path="/order/:id" component={OrderScreen} />
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
           <Route exact path="/" component={HomeScreen} />
