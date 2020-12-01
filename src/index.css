@@ -248,6 +248,11 @@ img.small {
   background-color: #ffe0e0;
 }
 
+.alert-success {
+  color: #20a020;
+  background-color: #e0ffe0;
+}
+
 /* form */
 
 .form {
