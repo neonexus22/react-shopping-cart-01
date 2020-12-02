@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 const port = process.env.PORT || 5001;
 mongoose.connect(
   process.env.MONGODB_URL ||
-    "mongodb+srv://admin:g1dPr5MkQp7nVjzx@cluster0.zxbdw.mongodb.net/amazona?retryWrites=true&w=majority",
+    "mongodb+srv://admin:g1dPr75MkQp87nVjzx6@cluster0.zxbdw.mongodb.net/amazona?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
